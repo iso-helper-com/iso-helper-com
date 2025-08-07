@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>智慧化ISO管理，輕鬆完成認證</title>
+    <title>ISO-Helper: 智慧化ISO管理，輕鬆達成合規</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for web pages -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -28,6 +30,16 @@
             height: 4px;
             background-color: #3b82f6; /* Tailwind blue-500 */
             border-radius: 9999px;
+        }
+        /* Custom styles for Lucide icons */
+        .lucide-icon {
+            width: 60px; /* Equivalent to 60x60px */
+            height: 60px; /* Equivalent to 60x60px */
+            color: #1d4ed8; /* Tailwind blue-800 */
+            background-color: #dbeafe; /* Tailwind blue-100 */
+            padding: 10px; /* Add some padding around the icon */
+            border-radius: 9999px; /* Make it circular */
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Tailwind shadow-sm */
         }
     </style>
 </head>
@@ -82,8 +94,8 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div class="flex items-start bg-white p-6 rounded-xl shadow-md border border-blue-100">
-                    <div class="flex-shrink-0 mr-4">
-                        <img src="https://placehold.co/60x60/dbeafe/1d4ed8?text=文件" alt="文件管理圖示" class="rounded-full shadow-sm">
+                    <div class="flex-shrink-0 mr-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text lucide-icon"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-2 text-blue-700">智慧文件管理</h3>
@@ -91,8 +103,8 @@
                     </div>
                 </div>
                 <div class="flex items-start bg-white p-6 rounded-xl shadow-md border border-blue-100">
-                    <div class="flex-shrink-0 mr-4">
-                        <img src="https://placehold.co/60x60/dbeafe/1d4ed8?text=審核" alt="審核追蹤圖示" class="rounded-full shadow-sm">
+                    <div class="flex-shrink-0 mr-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check lucide-icon"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 2.69V6"/><path d="M10 6H8a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-2"/><path d="M10 4L12 2l2 2"/><path d="m9 14 2 2 4-4"/></svg>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-2 text-blue-700">自動化審核追蹤</h3>
@@ -100,8 +112,8 @@
                     </div>
                 </div>
                 <div class="flex items-start bg-white p-6 rounded-xl shadow-md border border-blue-100">
-                    <div class="flex-shrink-0 mr-4">
-                        <img src="https://placehold.co/60x60/dbeafe/1d4ed8?text=任務" alt="任務管理圖示" class="rounded-full shadow-sm">
+                    <div class="flex-shrink-0 mr-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users lucide-icon"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-2 text-blue-700">協同任務管理</h3>
@@ -109,8 +121,8 @@
                     </div>
                 </div>
                 <div class="flex items-start bg-white p-6 rounded-xl shadow-md border border-blue-100">
-                    <div class="flex-shrink-0 mr-4">
-                        <img src="https://placehold.co/60x60/dbeafe/1d4ed8?text=報告" alt="報告生成圖示" class="rounded-full shadow-sm">
+                    <div class="flex-shrink-0 mr-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bar-chart-2 lucide-icon"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-2 text-blue-700">客製化報告生成</h3>
@@ -118,8 +130,8 @@
                     </div>
                 </div>
                 <div class="flex items-start bg-white p-6 rounded-xl shadow-md border border-blue-100">
-                    <div class="flex-shrink-0 mr-4">
-                        <img src="https://placehold.co/60x60/dbeafe/1d4ed8?text=培訓" alt="培訓管理圖示" class="rounded-full shadow-sm">
+                    <div class="flex-shrink-0 mr-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award lucide-icon"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89 7 22l5-3 5 3-1.21-8.11"/></svg>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-2 text-blue-700">員工培訓管理</h3>
@@ -127,8 +139,8 @@
                     </div>
                 </div>
                 <div class="flex items-start bg-white p-6 rounded-xl shadow-md border border-blue-100">
-                    <div class="flex-shrink-0 mr-4">
-                        <img src="https://placehold.co/60x60/dbeafe/1d4ed8?text=風險" alt="風險管理圖示" class="rounded-full shadow-sm">
+                    <div class="flex-shrink-0 mr-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-alert lucide-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-2 text-blue-700">風險與機會管理</h3>
